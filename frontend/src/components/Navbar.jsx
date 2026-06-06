@@ -11,31 +11,57 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-blue-600 text-white p-4 flex justify-between items-center">
-      <Link to="/" className="text-2xl font-bold">Community Event Planner</Link>
-      <div>
-        {user ? (
-          <>
-            <Link to="/events" className="mr-4">Events</Link>
-            <Link to="/profile" className="mr-4">Profile</Link>
-            <button
-              onClick={handleLogout}
-              className="bg-red-500 px-4 py-2 rounded hover:bg-red-700"
-            >
-              Logout
-            </button>
-          </>
-        ) : (
-          <>
-            <Link to="/login" className="mr-4">Login</Link>
-            <Link
-              to="/register"
-              className="bg-green-500 px-4 py-2 rounded hover:bg-green-700"
-            >
-              Register
-            </Link>
-          </>
-        )}
+    <nav className="bg-blue-600 text-white shadow-md">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+        <Link
+          to="/tasks"
+          className="text-2xl font-bold hover:text-blue-100"
+        >
+          🐶 Social Puppy
+        </Link>
+
+        <div className="flex items-center gap-4">
+          {user ? (
+            <>
+              <Link
+                to="/tasks"
+                className="hover:text-blue-100"
+              >
+                Events
+              </Link>
+
+              <Link
+                to="/profile"
+                className="hover:text-blue-100"
+              >
+                Profile
+              </Link>
+
+              <button
+                onClick={handleLogout}
+                className="bg-red-500 px-4 py-2 rounded hover:bg-red-600"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <>
+              <Link
+                to="/login"
+                className="hover:text-blue-100"
+              >
+                Login
+              </Link>
+
+              <Link
+                to="/register"
+                className="bg-green-500 px-4 py-2 rounded hover:bg-green-600"
+              >
+                Register
+              </Link>
+            </>
+          )}
+        </div>
       </div>
     </nav>
   );
