@@ -1,26 +1,86 @@
-**Community Event Planner Application Overview:The task manager application is designed to help users efficiently manage their tasks and responsibilities by providing a user-friendly interface for creating, viewing, updating, and deleting tasks. It includes essential features such as secure user authentication, allowing individuals to sign up and log in to their accounts, as well as profile management to update personal information. With built-in validation such as input field validation and email validation, the application ensures a seamless user experience while enhancing productivity and organization in both personal and professional settings. **
+# Social Puppy – Community Event Planner
 
-**This apps **contain** the following features:**
+## Project Overview
 
-* Signup
-* Login
-* Logout
-* Update profile
-* Add tasks
-* View tasks
-* Update tasks
-* Delete tasks
+Social Puppy is a Community Event Planner developed for IFQ636 Software Lifecycle Management at Queensland University of Technology (QUT).
 
-**This **app**lication** is**almost **a** precompiled** app**. However, students will develop some features,**such as adding tasks, viewing tasks, updating tasks, and **deleting** tasks**. **Students** will interact with GitHub when they develop the features.**
+The application allows puppy school members to create, manage and participate in puppy-friendly socialisation events. Registered users can create, edit and delete their own events, while administrators have additional moderation capabilities.
 
 ---
 
-**Prerequisite:** Please install the following software and create account in following web tools** **
+## Public URL
 
-* **Nodejs [**[https://nodejs.org/en](https://nodejs.org/en)]** **
-* **Git [**[https://git-scm.com/](https://git-scm.com/)]** **
-* **VS code editor** [[https://code.visualstudio.com/](https://code.visualstudio.com/)]** **
-* **MongoDB Account** [[https://account.mongodb.com/account/login](https://account.mongodb.com/account/login)]** - In tutorial, we have also showed how can you create account and database: follow step number 2.**
-* **GitHub Account** [[https://github.com/signup?source=login](https://github.com/signup?source=login)]** **
+http://54.206.45.11
 
 ---
+
+## Access Instructions
+
+The application supports self-registration.
+
+Markers may create their own account by selecting **Register** on the application homepage.
+
+No pre-configured account is required.
+
+---
+
+## Local Installation
+
+### Clone Repository
+
+```bash
+git clone https://github.com/vynka-qut/IFQ636-A1-CommunityEventPlanner.git
+cd IFQ636-A1-CommunityEventPlanner
+```
+
+### Backend Setup
+
+```bash
+cd backend
+npm install
+npm start
+```
+
+### Frontend Setup
+
+```bash
+cd frontend
+npm install
+npm start
+```
+
+### Environment Variables
+
+Create a `.env` file in the backend directory and configure:
+
+```env
+MONGO_URI=<your MongoDB connection string>
+JWT_SECRET=<your secret key>
+```
+
+---
+
+## Project Links
+
+### GitHub Repository
+
+https://github.com/vynka-qut/IFQ636-A1-CommunityEventPlanner
+
+### Jira Project
+
+https://qut-ifq636.atlassian.net/jira/software/projects/CEP/summary
+
+### Figma Prototype
+
+https://chief-brook-27303225.figma.site
+
+---
+
+## Author
+
+**Vynka Lee Smith**  
+Student ID: n12809411
+
+IFQ636 Software Lifecycle Management
+
+Queensland University of Technology
