@@ -10,7 +10,7 @@ The application allows puppy school members to create, manage and participate in
 
 ## Public URL
 
-http://54.206.45.11
+http://13.239.239.108
 
 ---
 
